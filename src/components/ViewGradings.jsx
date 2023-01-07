@@ -16,7 +16,7 @@ const ViewGradings = () => {
 
     useEffect(() => {
         var auth=sessionStorage.getItem("token")
-        axios.post(`http://localhost:3001/${sessionStorage.getItem('home')}/getGradings`,{
+        axios.post(`${process.env.REACT_APP_BKD_URL}/${sessionStorage.getItem('home')}/getGradings`,{
             uid: window.location.pathname.split("/")[2]
         }, {
             headers: {Authorization: "Bearer "+auth}

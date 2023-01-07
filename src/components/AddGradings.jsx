@@ -45,7 +45,7 @@ const AddGradings = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(draping+sac+st+ce+pvi+ccofft+cfacc+hvfw+poncia+ne+iaat+lirafp+wc+giwn+epcwmv+cacth+isa+ip+osafop);
-        axios.post('http://localhost:3001/trainer/addGrading', {
+        axios.post(`${process.env.REACT_APP_BKD_URL}/trainer/addGrading`, {
             draping: draping,
             scleralAccess:sac,
             sclerocorneal:st,

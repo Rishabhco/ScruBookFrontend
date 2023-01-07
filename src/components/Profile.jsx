@@ -20,7 +20,7 @@ const Profile = () => {
         var auth=sessionStorage.getItem('token');
         var home=sessionStorage.getItem("home");
         var uid=sessionStorage.getItem("uid");
-        axios.get(`http://localhost:3001/${home}/profile/${uid}`,{
+        axios.get(`${process.env.REACT_APP_BKD_URLL}/${home}/profile/${uid}`,{
             headers: {Authorization: "Bearer "+auth,}
         }).then((response)=>{
             setEmployeeId(response.data.data.uid);

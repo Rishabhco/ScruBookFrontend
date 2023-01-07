@@ -43,7 +43,7 @@ const TraineeSignup = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         const age = Math.floor((new Date() - new Date(dob).getTime()) / 3.15576e+10);
-        axios.post("http://localhost:3001/trainee/signup", {
+        axios.post(`${process.env.REACT_APP_BKD_URL}/trainee/signup`, {
             uid: employeeId,
             name,
             phone,

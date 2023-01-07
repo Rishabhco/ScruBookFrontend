@@ -9,7 +9,7 @@ const ViewPatient = () => {
 
     useEffect(() => {
         var auth=sessionStorage.getItem("token")
-        axios.post(`http://localhost:3001/${sessionStorage.getItem("home")}/viewPatient`,{
+        axios.post(`${process.env.REACT_APP_BKD_URL}1/${sessionStorage.getItem("home")}/viewPatient`,{
             uid: window.location.pathname.split("/")[2]
         }, {
             headers: {Authorization: "Bearer "+auth}

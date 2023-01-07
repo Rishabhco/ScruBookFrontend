@@ -15,7 +15,7 @@ const TraineeLogin = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        axios.post("http://localhost:3001/trainee/login", {
+        axios.post(`${process.env.REACT_APP_BKD_URL}/trainee/login`, {
             uid: employeeId,
             password
         }).then((response) => {

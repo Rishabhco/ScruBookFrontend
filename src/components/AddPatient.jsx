@@ -79,7 +79,7 @@ const AddPatient = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:3001/trainee/addPatient',{
+        axios.post(`${process.env.REACT_APP_BKD_URL}/trainee/addPatient`,{
             uid: patientUid,
             mrno: patientMRNo,
             name: name,

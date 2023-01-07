@@ -10,7 +10,7 @@ const TraineeHome = () => {
 
     useEffect(() => {
         var auth=sessionStorage.getItem("token")
-        axios.post('http://localhost:3001/trainee/getPatients',{
+        axios.post(`${process.env.REACT_APP_BKD_URL}/trainee/getPatients`,{
             uid: sessionStorage.getItem("uid")
         }, {
             headers: {Authorization: "Bearer "+auth}

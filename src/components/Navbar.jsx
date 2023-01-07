@@ -16,7 +16,7 @@ const Navbar=(props)=>{
         e.preventDefault();
         var auth=sessionStorage.getItem('token');
         console.log(auth);
-        axios.get(`http://localhost:3001/${props.home}/logout`,{
+        axios.get(`${process.env.REACT_APP_BKD_URL}/${props.home}/logout`,{
             headers: {Authorization: "Bearer "+auth}
         }).then((response)=>{
             if(response.status===200){
