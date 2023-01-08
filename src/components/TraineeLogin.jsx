@@ -25,6 +25,7 @@ const TraineeLogin = () => {
                 navigation();
             }
         }).catch((err) => {
+            console.log(err);
             if (err.response.status === 404) {
                 swal("ERROR!", "Use valid Employee Id","error");
             }

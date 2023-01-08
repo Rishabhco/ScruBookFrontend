@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import Navbar from './Navbar';
 import {EyeIcon} from '@heroicons/react/outline';
 
-const TraineeHome = () => {
+const TrainerHome = () => {
     const [patients, setPatients] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -66,4 +66,4 @@ const TraineeHome = () => {
     );
 }
 
-export default TraineeHome;
+export default TrainerHome;
