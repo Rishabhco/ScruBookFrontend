@@ -76,7 +76,7 @@ const TraineeSignup = () => {
     return (
         <div className="flex">
             <div className="bg-gray-800 w-1/2 h-screen flex items-center justify-center">
-            <Link to="/"><h1 className="text-5xl text-white">Welcome to the ScruBook</h1></Link>
+            <Link to="/"><h1 className="text-5xl text-white">Welcome to the ScrubBook</h1></Link>
             </div>
             <div className="w-1/2 h-screen flex flex-col items-center justify-center">
                 <div className="text-2xl font-bold mb-4 mt-4">Trainee Signup</div>
